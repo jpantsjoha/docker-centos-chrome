@@ -15,7 +15,7 @@ RUN yum -y update \
     && unzip \
     && python-crypto; yum clean all
 
-RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm \
+RUN wget https://archive.org/download/Google-Chrome-Legacy-Versions/google-chrome-stable-50.0.2661.86-1.x86_64.rpm \
     && yum -y install /google-chrome-stable_current_x86_64.rpm \
     && yum clean all \
     && rm /google-chrome-stable_current_x86_64.rpm
@@ -26,7 +26,7 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.
 #    && rm /mysql-community-release-el7-5.noarch.rpm
 
 RUN yum install -y
-RUN wget https://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip \
+RUN wget https://chromedriver.storage.googleapis.com/2.22/chromedriver_linux64.zip \
     && unzip chromedriver_linux64.zip \
     && rm chromedriver_linux64.zip \
     && chmod +x chromedriver \
