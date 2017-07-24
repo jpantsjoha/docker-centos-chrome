@@ -1,0 +1,12 @@
+mysql
+redis
+requests
+robotframework
+sqlalchemy
+testrail-lib
+robotframework-selenium2library
+padding
+pycrypto
+selenium
+pymongo
+padding
