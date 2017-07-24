@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170718 20:23:13.049" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<robot generated="20170724 09:09:43.999" generator="Robot 3.0.2 (Python 2.7.5 on linux2)">
 <suite source="/robot_tests" id="s1" name="Robot Tests">
 <suite source="/robot_tests/chrome_test.robot" id="s1-s1" name="Chrome Test">
 <test id="s1-s1-t1" name="Chrome opens a page">
@@ -9,29 +9,24 @@
 <arg>http://fanmiles.com</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170718 20:23:13.174" level="INFO">Opening browser 'chrome' to base url 'http://fanmiles.com'</msg>
+<msg timestamp="20170724 09:09:44.114" level="INFO">Opening browser 'chrome' to base url 'http://fanmiles.com'</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170718 20:25:08.676" level="FAIL">No browser is open</msg>
-<status status="FAIL" endtime="20170718 20:25:08.676" starttime="20170718 20:25:08.668"></status>
+<status status="FAIL" endtime="20170724 09:10:06.283" starttime="20170724 09:10:06.282"></status>
 </kw>
-<msg timestamp="20170718 20:25:08.677" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
-<msg timestamp="20170718 20:25:08.680" level="FAIL">WebDriverException: Message: chrome not reachable
-  (Driver info: chromedriver=2.29.461571 (8a88bbe0775e2a23afda0ceaf2ef7ee74e822cc5),platform=Linux 4.9.36-moby x86_64)
-</msg>
-<status status="FAIL" endtime="20170718 20:25:08.681" starttime="20170718 20:23:13.173"></status>
+<msg timestamp="20170724 09:10:06.283" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20170724 09:10:06.289" level="FAIL">error: [Errno 104] Connection reset by peer</msg>
+<status status="FAIL" endtime="20170724 09:10:06.289" starttime="20170724 09:09:44.113"></status>
 </kw>
-<status status="FAIL" endtime="20170718 20:25:08.683" critical="yes" starttime="20170718 20:23:13.169">WebDriverException: Message: chrome not reachable
-  (Driver info: chromedriver=2.29.461571 (8a88bbe0775e2a23afda0ceaf2ef7ee74e822cc5),platform=Linux 4.9.36-moby x86_64)
-</status>
+<status status="FAIL" endtime="20170724 09:10:06.291" critical="yes" starttime="20170724 09:09:44.111">error: [Errno 104] Connection reset by peer</status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20170718 20:25:08.688" starttime="20170718 20:25:08.688"></status>
+<status status="PASS" endtime="20170724 09:10:06.293" starttime="20170724 09:10:06.293"></status>
 </kw>
-<status status="FAIL" endtime="20170718 20:25:08.689" starttime="20170718 20:23:13.077"></status>
+<status status="FAIL" endtime="20170724 09:10:06.293" starttime="20170724 09:09:44.024"></status>
 </suite>
-<status status="FAIL" endtime="20170718 20:25:08.693" starttime="20170718 20:23:13.052"></status>
+<status status="FAIL" endtime="20170724 09:10:06.297" starttime="20170724 09:09:44.001"></status>
 </suite>
 <statistics>
 <total>
@@ -46,6 +41,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20170718 20:25:08.677" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20170724 09:10:06.283" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
 </errors>
 </robot>

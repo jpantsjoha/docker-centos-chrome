@@ -7,4 +7,4 @@ docker run --rm \
         -v /dev/shm:/dev/shm \
         -v ${PWD}/tests/robot_tests/output:/output/ \
         -v ${PWD}/tests/robot_tests:/robot_tests/ \
-        -it
+        -it c
