@@ -10,10 +10,10 @@ RUN yum -y install /google-chrome-stable_current_x86_64.rpm
 RUN yum clean all
 RUN rm /google-chrome-stable_current_x86_64.rpm
 
-#ADD http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm /mysql-community-release-el7-5.noarch.rpm
-#RUN yum -y install /mysql-community-release-el7-5.noarch.rpm
-#RUN yum clean all
-#RUN rm /mysql-community-release-el7-5.noarch.rpm
+ADD http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm /mysql-community-release-el7-5.noarch.rpm
+RUN yum -y install /mysql-community-release-el7-5.noarch.rpm
+RUN yum clean all
+RUN rm /mysql-community-release-el7-5.noarch.rpm
 
 RUN yum install -y unzip
 ADD https://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip /chromedriver_linux64.zip
