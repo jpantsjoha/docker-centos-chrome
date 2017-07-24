@@ -16,9 +16,8 @@ RUN yum -y update \
     && python-crypto; yum clean all
 
 RUN wget https://archive.org/download/Google-Chrome-Legacy-Versions/google-chrome-stable-50.0.2661.86-1.x86_64.rpm \
-    && yum -y install /google-chrome-stable_current_x86_64.rpm \
-    && yum clean all \
-    && rm /google-chrome-stable_current_x86_64.rpm
+    && yum -y install /google-chrome*.rpm \
+    && rm /google-chrome*.rpm
 
 #RUN wget http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm \
 #    && yum -y install /mysql-community-release-el7-5.noarch.rpm \
