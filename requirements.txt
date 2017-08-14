@@ -1,4 +1,7 @@
-redis
+vim
+wget
+net-tools
+
 requests
 robotframework
 sqlalchemy
@@ -9,4 +12,3 @@ pycrypto
 selenium
 pymongo
 padding
-mysql
